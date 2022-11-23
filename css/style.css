@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #41bcbe !important;
+}
+
+.tip_calculator-container {
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 550px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.left-container {
+    width: 48%;
+
+}
+
+.bill-container {
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+.bill-container:before {
+    position: absolute;
+    content: "$";
+    top: 49%;
+    left: 5%;
+    font-family: 'Roboto Mono', monospace;
+    color: #aaa2a2;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.bill-text {
+    font-family: 'Roboto Mono', monospace;
+    color: #343a40;
+    font-size: 14px;
+}
+
+
+.label {
+    width: 100%;
+}
+
+.bill-input {
+    text-align: end;
+    align-content: center;
+    background: #eff1f5;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 38px;
+    padding: 0 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.tip-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-tip{
+    width: 80px;
+    height: 38px;
+    margin-bottom: 10px;
+}
+
+.tip-input {
+    width: 80px;
+    height: 38px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    background: #41bcbe;
+    border: 1px solid #41bcbe;
+    text-align: center;
+}
+
+.person-container {
+    position: relative;
+}
+
+.person-container:before {
+    position: absolute;
+    content: url("../images/person.png");
+    width: 24px;
+    top: 49%;
+    left: 5%;
+    color: #aaa2a2;
+    z-index: 1;
+}
+
+#personInput:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 20px;
+    background: #0c6efd;
+    border-radius: 15px;
+}
+
+.amount-container, .total-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.reset-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.btn-reset {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+}
