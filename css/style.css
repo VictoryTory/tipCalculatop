@@ -3,6 +3,10 @@ body {
     background-color: #41bcbe !important;
 }
 
+.tip-calculator__wrapper {
+    margin: auto auto;
+}
+
 .tip_calculator-container {
     margin: 0 auto;
     padding: 15px 20px;
@@ -74,13 +78,17 @@ body {
     margin-bottom: 10px;
 }
 
+.active-tip {
+    background: #5e41be !important;
+}
+
 .tip-input {
     width: 80px;
     height: 38px;
     margin-bottom: 0;
     border-radius: 5px;
-    background: #41bcbe;
-    border: 1px solid #41bcbe;
+    background: #9AC2FF;
+    border: 1px solid #9AC2FF;
     text-align: center;
 }
 
@@ -110,7 +118,7 @@ body {
     flex-direction: column;
     width: 48%;
     padding: 20px;
-    background: #0c6efd;
+    background: #9AC2FF;
     border-radius: 15px;
 }
 
@@ -130,4 +138,9 @@ body {
     align-items: center;
     width: 100%;
     text-transform: uppercase;
+}
+
+.error {
+    display: none;
+    color: red;
 }

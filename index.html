@@ -14,56 +14,54 @@
   
   <title>Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-<div class="tip_calculator-container">
-  <div class="left-container">
-    <div class="bill-container">
-      <label class="label">
-        <h2 class="bill-text">Bill</h2>
-        <input type="number" class="bill-input" id="billInput">
-      </label>
-    </div>
+    <div class="tip-calculator__wrapper">
+      <div class="tip_calculator-container">
+        <div class="left-container">
+          <div class="bill-container">
+            <label class="label">
+              <h2 class="bill-text">Bill</h2>
+              <input type="number" class="bill-input" id="billInput">
+            </label>
+          </div>
 
-    <div class="tip-container">
-      <label class="label">
-        <h2 class="bill-text">Select Tip %</h2>
-      </label>
-      <button class="btn btn-primary btn-tip">5%</button>
-      <button class="btn btn-primary btn-tip">10%</button>
-      <button class="btn btn-primary btn-tip">15%</button>
-      <button class="btn btn-primary btn-tip">20%</button>
-      <button class="btn btn-primary btn-tip">25%</button>
-      <button class="btn btn-primary btn-tip">Custom</button>
+          <label class="label">
+            <h2 class="bill-text">Select Tip %</h2>
+          </label>
+          <div class="tip tip-container">
+            <button class="btn btn-primary btn-tip tips tip-5">5%</button>
+            <button class="btn btn-primary btn-tip tips tip-10">10%</button>
+            <button class="btn btn-primary btn-tip tips tip-15">15%</button>
+            <button class="btn btn-primary btn-tip tips tip-20">20%</button>
+            <button class="btn btn-primary btn-tip tips tip-25">25%</button>
+            <div class="div tip-custom">
+              <input class="tip-input" placeholder="Custom"/>
+            </div>
+          </div>
+          <div class="person-container">
+            <label for="" class="person-label">Number of people</label>
+            <label for="" class="error">Can't be a zero</label>
+              <input type="number" class="bill-input" id="personInput">
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="amount-container">
+            <h2 class="bill-text">Tip amount<br>/ person</h2>
+            <span class="amount-person">$0.00</span>
+          </div>
+          <div class="total-container">
+            <h2 class="bill-text">Total<br>/ person</h2>
+            <span class="total-person">$0.00</span>
+          </div>
+          <div class="reset-wrapper">
+            <button class="btn btn-dark btn-reset" >reset</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="person-container">
-      <label class="label">
-        <h2 class="bill-text">Number of people</h2>
-        <input type="number" class="bill-input" id="personInput">
-      </label>
-    </div>
-  </div>
-  <div class="right-container">
-    <div class="amount-container">
-      <h2 class="bill-text">Tip amount<br>/ person</h2>
-      <span class="amount-person">0</span>
-    </div>
-    <div class="total-container">
-      <h2 class="bill-text">Total<br>/ person</h2>
-      <span class="total-person">0</span>
-    </div>
-    <div class="reset-wrapper">
-      <button class="btn btn-dark btn-reset" >reset</button>
-    </div>
-  </div>
-</div>
 
   <!-- JavaScript Bundle with Popper -->
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
