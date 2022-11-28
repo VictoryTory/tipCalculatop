@@ -26,7 +26,7 @@ totalPerPerson.innerHTML = "$" + (0.0).toFixed(2);
 
 let billValue = 0;
 let peopleValue = 0;
-let tipValue = 0.15;
+let tipValue = 0;
 
 function billInputFun() {
     billValue = parseFloat(billInput.value)
