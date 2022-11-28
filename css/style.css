@@ -14,7 +14,10 @@ body {
 }
 
 .tip-calculator__wrapper {
-    margin: auto auto;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
 }
 
 .tip_calculator-container {
