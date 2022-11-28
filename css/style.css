@@ -1,6 +1,16 @@
+*{
+    transition: all 0.4s;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: #41bcbe !important;
+    font-size: 62.5%;
+    background-color: #9ac2ff;
 }
 
 .tip-calculator__wrapper {
@@ -9,14 +19,15 @@ body {
 
 .tip_calculator-container {
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 1.5rem 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 550px;
-    width: 100%;
-    border-radius: 15px;
-    background-color: #fff;
+    max-width: 55rem;
+    width: 100vw;
+    border-radius: 1.5rem;
+    background-color: #FED049;
+    overflow: hidden;
 }
 
 .left-container {
@@ -25,26 +36,16 @@ body {
 }
 
 .bill-container {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     position: relative;
 
-}
-
-.bill-container:before {
-    position: absolute;
-    content: "$";
-    top: 49%;
-    left: 5%;
-    font-family: 'Roboto Mono', monospace;
-    color: #aaa2a2;
-    font-size: 16px;
-    z-index: 1;
 }
 
 .bill-text {
     font-family: 'Roboto Mono', monospace;
     color: #343a40;
-    font-size: 14px;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -52,16 +53,29 @@ body {
     width: 100%;
 }
 
-.bill-input {
+.bill-input, .person-input {
     text-align: end;
     align-content: center;
-    background: #eff1f5;
+    background-color: #eff1f5;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     width: 100%;
-    height: 38px;
-    padding: 0 15px;
+    height: 3.8rem;
+    padding: 0 1.5rem;
     font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.bill-input {
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+}
+.person-input {
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 1rem center;
 }
 
 .tip-container {
@@ -69,41 +83,43 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    margin-bottom: 15px;
 }
 
-.btn-tip{
-    width: 80px;
-    height: 38px;
-    margin-bottom: 10px;
+.tips{
+    width: 8rem;
+    height: 3.8rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background: #9AC2FF;
+    border: 0.1rem solid #9AC2FF;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #343a40;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .active-tip {
-    background: #5e41be !important;
+    background: #387ce4 !important;
+    color: #fff;
+    border: 0.1rem solid;
 }
 
 .tip-input {
-    width: 80px;
-    height: 38px;
+    width: 8rem;
+    height: 3.8rem;
     margin-bottom: 0;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background: #9AC2FF;
-    border: 1px solid #9AC2FF;
+    border: 0.1rem solid #9AC2FF;
     text-align: center;
+    font-family: inherit;
+    font-size: 1.1rem;
 }
 
 .person-container {
     position: relative;
-}
-
-.person-container:before {
-    position: absolute;
-    content: url("../images/person.png");
-    width: 24px;
-    top: 49%;
-    left: 5%;
-    color: #aaa2a2;
-    z-index: 1;
+    margin-bottom: 1.5rem;
 }
 
 #personInput:before {
@@ -117,15 +133,15 @@ body {
     display: flex;
     flex-direction: column;
     width: 48%;
-    padding: 20px;
+    padding: 2rem;
     background: #9AC2FF;
-    border-radius: 15px;
+    border-radius: 1.5rem;
 }
 
 .amount-container, .total-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 .reset-wrapper {
     display: flex;
@@ -134,13 +150,29 @@ body {
 }
 
 .btn-reset {
-    display: flex;
-    align-items: center;
     width: 100%;
     text-transform: uppercase;
+    border-radius: 0.5rem;
+    background: #FED049;
+    border: 0.1rem solid #9AC2FF;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #343a40;
+    font-size: 1.4rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+span {
+    font-size: 1.2rem;
 }
 
 .error {
     display: none;
     color: red;
+}
+
+input:hover, .tips:hover,
+input:focus {
+    border: solid 0.2rem #35aef1;
 }
